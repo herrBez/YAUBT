@@ -1,0 +1,29 @@
+\mode<presentation>
+
+% Frame title
+\defbeamertemplate*{frametitle}{texsx}[1][]
+{
+\vskip0.6cm%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1.2cm]{frametitle} 
+  \begin{tikzpicture}
+  \useasboundingbox[fill=white](0,0) rectangle(\paperwidth,1.2);
+  \fill[cprimary] (0,0) rectangle(0.87\paperwidth,1.2);
+  \fill[csecondary] (0.88\paperwidth,0.0) rectangle(\paperwidth,1.2);
+   \ifx\insertframesubtitle\@empty%
+      {\node[anchor=west, white,font=\large] at (0.20\paperwidth,0.61){\insertframetitle};}
+       \node[inner sep=0pt] (russell) at (0.94\paperwidth,0.6)
+        {\includegraphics[width=0.08\paperwidth]{small_logo.png}
+        };
+      \else%
+      {\node[anchor= west, white,font=\large] at (0.20\paperwidth,0.81){\insertframetitle};%
+       \node[anchor= west, white,font=\small] at (0.20\paperwidth,0.41){\insertframesubtitle};
+        \node[inner sep=0pt] (russell) at (0.94\paperwidth,0.6)
+        {\includegraphics[width=0.08\paperwidth]{small_logo.png}
+        };
+       }%
+      \fi
+  \end{tikzpicture}
+  \end{beamercolorbox}
+}
+
+\mode<all>
