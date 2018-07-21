@@ -18,7 +18,7 @@ git clone https://github.com/herrBez/YAUBT.git
 ```
 or even better, go in your beamer/git project and use YAUBT as a submodule:
 ```sh
-git submodule add https://github.com/chaconinc/YAUBT
+git submodule add https://github.com/herrBez/YAUBT
 ```
 
 ## Running the tests
