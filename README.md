@@ -33,7 +33,7 @@ Any improvement suggestion/pull request/issue are well appreciated
 
 ## Customization
 
-Simple step to customize the theme:
+Simple steps to customize the theme:
 
 1. Fork the project
 2. Change the color in file [mycolor.sty](mycolor)
