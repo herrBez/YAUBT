@@ -16,7 +16,7 @@
         };
       \else%
       {\node[anchor= west, white,font=\large] at (0.10\paperwidth,0.8){\insertframetitle};%
-       \node[anchor= west, white,font=\small] at (0.20\paperwidth,0.4){\insertframesubtitle};
+       \node[anchor= west, white,font=\small] at (0.10\paperwidth,0.4){\insertframesubtitle};
         \node[inner sep=0pt] (russell) at (0.94\paperwidth,0.6)
         {\includegraphics[width=0.08\paperwidth]{small_logo.png}
         };
@@ -26,14 +26,15 @@
   \end{beamercolorbox}
 }
 
-\addtobeamertemplate{navigation symbols}{}{%
+\setbeamercolor{footline}{fg=ctertiary}
+\setbeamerfont{footline}{series=\bfseries}
+
+\setbeamertemplate{navigation symbols}{%
     \usebeamerfont{footline}%
     \usebeamercolor[fg]{footline}%
     \hspace{1em}%
-    \insertframenumber/\inserttotalframenumber
+    \insertframenumber/\inserttotalframenumber%
 }
 
-\setbeamercolor{footline}{fg=blue}
-\setbeamerfont{footline}{series=\bfseries}
 
 \mode<all>

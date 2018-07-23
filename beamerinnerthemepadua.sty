@@ -18,11 +18,15 @@
 % Title page
 \defbeamertemplate*{title page}{texsx}[1][]
 { 
-   \vskip6cm%
-    \begin{beamercolorbox}[wd=12cm,leftskip=3cm,sep=8pt,#1]{title page header}
+   \vskip2cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=0.4\paperwidth,sep=8pt,#1]{title page header}
       \usebeamerfont{title}\inserttitle\par%
     \end{beamercolorbox}%
-    \vskip0.75cm%
+    \vskip1cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=3cm,sep=8pt,#1]{subtitle}
+      \usebeamerfont{subtitle}\insertsubtitle\par%
+    \end{beamercolorbox}%
+    \vskip3cm%
     \begin{beamercolorbox}[wd=12cm,leftskip=3cm,#1]{author}
       \usebeamerfont{author}\insertauthor%
     \end{beamercolorbox}
@@ -33,6 +37,7 @@
     
   \vfill
 }
+
 
 \mode
 <all>
